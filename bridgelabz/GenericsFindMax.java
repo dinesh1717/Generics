@@ -4,7 +4,6 @@ import java.util.List;
 
 public class GenericsFindMax  <T extends Comparable<T>> {
 
-
     public <T extends Comparable<T>> T findMaximum(T... x) {
         T max = x[0];
         List<T> parameterArray = new ArrayList<T>();
@@ -18,11 +17,11 @@ public class GenericsFindMax  <T extends Comparable<T>> {
         return max;
     }
 
-
+   
     public static void main(String[] args) {
         GenericsFindMax genericsFindMax = new GenericsFindMax();
-        genericsFindMax.findMaximum(6,7,5,9);
-        genericsFindMax.findMaximum(6.5,7.8,5.9,8.6);
+        genericsFindMax.findMaximum(6, 7, 5, 9);
+        genericsFindMax.findMaximum(6.5, 7.8, 5.9, 8.6);
         genericsFindMax.findMaximum("apple", "peach", "banana", "orange");
     }
 }
