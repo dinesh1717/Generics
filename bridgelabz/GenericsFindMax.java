@@ -2,7 +2,7 @@ package bridgelabz;
 public class GenericsFindMax  <T extends Comparable<T>> {
 
 
-    public <T extends Comparable<T>> T findMaximum(T... x) {
+  
         public <T extends Comparable<T>>T findMaximum (T x, T y, T z){
             T max = x;
 
